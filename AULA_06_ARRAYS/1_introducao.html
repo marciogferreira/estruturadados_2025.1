@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        // Arrays
+        const alunos = ['Pedro', 'Raimundo', 'Jose']
+        document.write("Aluno na Posição 0: " + alunos[0] + "<br />")
+        document.write("Aluno na Posição 1: " + alunos[1] + "<br />")
+        document.write("Aluno na Posição 2: " + alunos[2] + "<br />")
+
+        alunos.push('Ana')
+        alunos.push('Fred')
+        alunos.push('Otonio')
+        document.write("Aluno na Posição 4: " + alunos[4] + "<br />")
+
+        alunos.pop() // Otonio
+        console.log(alunos)
+
+        // Adicionando e Removendo na Primeira Posição
+        alunos.unshift('Joao') // ADicionando Joao
+        alunos.shift() // Removendo Joao
+
+        // Adicionando Valor em qualquer posicao
+        const professores = ["Iran", "Otonio", "Correia", "Fred"]
+        alunos.splice(2, 2) // Remover Personalizado
+        // Adicionando
+        alunos.splice(1, 0, 'Valdir')
+        console.log(alunos)
+    </script>
+</body>
+</html>

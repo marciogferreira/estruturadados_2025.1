@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function funcaoSimples() {
+            alert("Ola, eu sou a funcao SImples")
+            alert("Ola")
+        }
+
+        let v1 = Number(prompt('Valor1'));
+        let v2 = Number(prompt('Valor2'));
+        let soma = v1 + v2;
+        document.write(soma);
+
+        funcaoSimples()
+        funcaoSimples()
+
+        // -------------------------------------------
+
+        // FUNCAO COM PARAMETRO
+        function multiplicarDoisNumeros(n1, n2) {
+            const res = n1 * n2;
+            alert(res)
+        }
+        multiplicarDoisNumeros(10, 20)
+        multiplicarDoisNumeros(20, 50)
+        multiplicarDoisNumeros(3, 5)
+
+        // FUNCOES DE RETORNO
+        let nome = 'ADS'
+        function multDoisNumeros(n1, n2) {
+            const res = n1 * n2;
+            nome = 'Pedro'
+            return res
+        }
+        console.log(nome)
+        const calculo1 = multDoisNumeros(2, 5)
+        const resultado = multDoisNumeros(3, calculo1)
+        console.log(resultado)
+
+
+        // FUNCOES DE SETA - ARROW FUNCTION
+        const funcaoSeta = (n1, n2) => n1 + n2
+        const result = funcaoSeta(10, 20)
+        console.log(result)
+
+        // FUNCOES DE CALLBACK - CHAMADA DE RETORNO
+        function testeADS(fun) {
+            alert("Estrutura de Dados")
+            fun(105)
+        }
+        function funcaoB(valor1) {
+            alert(valor1)
+        }
+        testeADS(funcaoB)
+
+        // FUNCOES DE CHAMADAS DE RETORNO
+        function testeSoma(n1, n2, callBack) {
+            const res = n1 + n2;
+            callBack(res)
+        }
+        function exibirTotal(total) {
+            alert("O resultado da soma é: " + total)
+        }
+        testeSoma(10, 20, exibirTotal)
+
+
+    </script>
+</body>
+</html>
+

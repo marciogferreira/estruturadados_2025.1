@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ESTRUTURA CONDICIONAL
+        // const imc = 34.2;
+        // if(imc < 18.5) {
+        //     document.write("Abaixo do Peso")
+        // } else {
+        //     if(imc >= 18.5 && imc <= 24.5) {
+        //         document.write("Peso Normal")
+        //     } else {
+        //         document.write("Acima do Peso")
+        //     }
+        // }
+
+        const imc = 34.2;
+        if(imc < 18.5) {
+            document.write("Abaixo do Peso")
+        } else if(imc >= 18.5 && imc <= 24.5) {
+            document.write("Peso Normal")
+        } else if(imc >= 24.5 && imc <= 31.5) {
+            document.write("Acima do Peso")
+        } else {
+            document.write("Obesidade")
+        }
+
+
+        let valor = prompt("Digite um valor");
+        valor = parseInt(valor);
+        valor = valor - 1;
+        document.write("Valor " + valor);
+        
+
+        // document.write(parseInt(prompt("Digite um valor 2")) - 1);
+
+
+        const totalVotos = 155;
+        const votosNulos = 15;
+        const porcentagemVotosNulos = votosNulos / totalVotos * 100
+        document.write(porcentagemVotosNulos.toFixed(2) + "%");
+    </script>
+</body>
+</html>

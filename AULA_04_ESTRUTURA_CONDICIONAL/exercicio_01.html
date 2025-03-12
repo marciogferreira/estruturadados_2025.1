@@ -1,0 +1,12 @@
+<script>
+    let salarioAtual = prompt('Salário Atual');
+    let percentual = prompt("Percentual");
+    
+    salarioAtual = Number(salarioAtual);
+    percentual = Number(percentual);
+
+    const valorReajuste = salarioAtual * percentual / 100;
+    const novoSalario = salarioAtual + valorReajuste;
+    
+    document.write(novoSalario)
+</script>
