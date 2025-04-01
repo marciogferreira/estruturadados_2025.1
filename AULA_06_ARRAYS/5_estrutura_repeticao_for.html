@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Crie um programa que receba do usuario 10 numeros.
+        // some todos os numeros e exiba o total
+        const numeros = []
+        // Estrutura de Repetição - FOR
+        // 0 ate 9
+        for(let contador = 0; contador < 10; contador++) {
+            numeros[contador] = Number(prompt("Digite o numero " + contador))
+        }
+        // 0 ate 9
+        let total = 0
+        for(let contador = 0; contador < 10; contador++) {
+            document.write(`
+                A Posição ${contador} tem o valor ${numeros[contador]} <br />
+            `)
+            total = total + numeros[contador]
+        }
+        document.write(`O Total é ${total}`)
+
+
+        
+    </script>
+</body>
+</html>

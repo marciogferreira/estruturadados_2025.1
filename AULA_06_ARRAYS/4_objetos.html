@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Tipos de Dados:
+        // string, number, boolean, null, NaN, undefined
+        // Array, Function e Object.
+        
+      
+        // Objetos
+        const pessoa = {
+            nome: "Joao",
+            idade: 21,
+            e_casado: true,
+            correr: () => {
+                console.log("Correndo..")
+            }
+        }
+        console.log(pessoa.nome)
+        console.log(pessoa.idade)
+        pessoa.correr()
+        const pessoa2 = {
+            nome: "Maria",
+            idade: 22,
+            e_casado: true,
+            correr: () => {
+                console.log("Correndo..")
+            }
+        }
+        console.log(pessoa)
+        console.log(pessoa2)
+        
+        // POO
+        class Pessoa {
+            nome;
+            e_casado;
+            idade;
+            constructor(nome, e_casado, idade) {
+                this.nome = nome;
+                this.e_casado = e_casado;
+                this.idade = idade;
+            }
+            correr() {
+                console.log(this.nome + " esta Correndo")
+            }
+        }
+        const pessoa3 = new Pessoa("Jose", true, 35);
+        console.log(pessoa3.nome, pessoa3.idade);
+        pessoa3.correr()
+
+
+
+
+    </script>
+</body>
+</html>
+

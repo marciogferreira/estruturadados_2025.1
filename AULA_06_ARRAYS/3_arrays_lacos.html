@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays e Laços</title>
+</head>
+<body>
+    <script>
+        const carros = [
+            "Chevrolet",
+            "Fiat",
+            "Hyundai"
+        ];
+        console.log(carros[0])
+        console.log(carros[1])
+        console.log(carros[2])
+
+        carros[0] = "Onix";
+        carros[1] = "Pulse";
+
+        // Estrutura de Repetição - Laços
+        // Função FOR - Para
+        let contador = 0;
+        for(contador; contador <= 10; contador++) {
+            document.write("Contador = " + contador)
+            document.write("<br />")
+        }
+
+        for(let contador2 = 50; contador2 >= 0; contador2--) {
+            if(contador2 % 2 == 0) { // Apenas Pares
+                document.write("Contador = " + contador2)
+                document.write("<br />")
+            }
+        }
+
+        const alunos = [
+            "Liduina", "Fátima", "Raimunda", "Conceição", "Haroldo"
+        ];
+
+        // Percorrendo um Array
+        const tamanho = alunos.length
+        for(let i = 0; i < tamanho; i++) {
+            console.log(i, alunos[i])
+        }
+
+
+
+    </script>
+</body>
+</html>

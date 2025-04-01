@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Arrays
+        // 1. Crie um programa que receba 10 nomes e exiba tela todos eles.
+        // const lista = [];
+        // for(let i = 0; i < 10; i++) {
+        //     let nome = prompt("Informe o nome " + i);
+        //     lista[i] = nome;
+        // }
+        // // Percorrer o Array
+        // for(let i = 0; i < 10; i++) {
+        //     if(lista[i] === 'Max') {
+        //         document.write(`<strong>${lista[i]}</strong> <br />`)
+        //     } else {
+        //         document.write(lista[i] + "<br />")
+        //     }   
+        // }
+        // CRIE UM PROGRAMA QUE LEIA 10 NUMEROS 
+        // E ARMAZENE TODOS EM UM ARRAY.
+        // PERCORRA TODO O ARRAY, SOME E EXIBA O TOTAL.
+
+        const numeros = []
+        for(let i = 0; i < 10; i++) {
+            let numero = Number(prompt("Digite o NUmero"));
+            numeros[i] = numero;
+        }
+        let total = 0
+        for(let i = 0; i < 10; i++) {
+            // total = total + numeros[i];
+            total += numeros[i];
+        }
+        document.write(`Total: ${total}`);
+    </script>
+
+    
+</body>
+</html>
